@@ -12,3 +12,6 @@ def get_one_article(request, articleNumber, articleText):
 
 def get_article_as_json(req):
     return JsonResponse({"number" : 13, "text": "Jopa popa syela trusi"})
+
+def get_article_by_id(req, articleNum):
+    return HttpResponse(f"This is article number: {articleNum}")
